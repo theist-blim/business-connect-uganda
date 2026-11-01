@@ -1,20 +1,85 @@
-<div class="card" style="grid-column:span 2">
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Connect Uganda | By Daniel Mityana</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Plus Jakarta Sans',sans-serif}
+body{background:#f8fafc}
+header{background:#0f0f0f;color:white;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:48px;height:48px;border-radius:50%;background:conic-gradient(from 0deg,black 0 120deg,#FFCC00 120deg 240deg,#CE1126 240deg 360deg);display:grid;place-items:center;font-weight:800;color:white;border:2px solid #FFCC00}
+.hero{background:radial-gradient(800px at 80% -20%,#FFCC00 0%,transparent 60%),radial-gradient(600px at -10% 100%,#CE1126 0%,transparent 50%),#0f0f0f;color:white;padding:42px 20px 36px}
+.hero h1{font-size:36px;line-height:.95;font-weight:800;letter-spacing:-1px}
+.hero h1 span{color:#FFCC00}
+.hero p{margin:14px 0 0;color:#cbd5e1;max-width:520px}
+.badges{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.badges span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:600}
+.btn{display:inline-block;padding:14px 22px;border-radius:12px;font-weight:800;text-decoration:none;margin-top:6px}
+.btn-yellow{background:#FFCC00;color:black}
+.grid{padding:22px 16px;display:grid;gap:16px;max-width:1100px;margin:0 auto}
+@media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr);padding:28px 20px}.hero{padding:64px 28px}}
+.card{background:white;border-radius:20px;padding:20px;box-shadow:0 8px 30px rgba(0,0,0,.06);border:1px solid #eef2f7;position:relative;overflow:hidden}
+.card:before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#0f0f0f,#FFCC00,#CE1126)}
+.icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:#f1f5f9}
+.card h3{margin:12px 0 4px;font-size:18px}
+.meta{font-size:13px;color:#64748b}
+.wa{display:block;margin-top:14px;background:#25D366;color:white;text-align:center;padding:12px;border-radius:12px;text-decoration:none;font-weight:800}
+.doc-link{display:flex;justify-content:space-between;align-items:center;padding:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;text-decoration:none;color:#0f0f0f;font-weight:600;font-size:13px}
+footer{background:#0f0f0f;color:#94a3b8;text-align:center;padding:28px 16px;margin-top:10px;border-top:4px solid #FFCC00}
+footer b{color:white}
+</style></head><body>
+
+<header><div class="logo"><div class="logo-mark">BCU</div><div><div style="font-weight:800">Business Connect Uganda</div><div style="font-size:10px;color:#FFCC00;letter-spacing:1px">BY DANIEL MITYANA • AAB • FUTURE DOCTOR & CEO</div></div></div><a href="https://wa.me/256777353793" style="background:#CE1126;color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:800;font-size:13px">List FREE</a></header>
+
+<div class="hero">
+<h1>Find <span>Trusted</span> Businesses in Mityana & Across Uganda</h1>
+<p>We connect you to verified local services — study resources, dental care, hardware and more. Built by Daniel from Mityana for Uganda.</p>
+<div class="badges"><span>✅ 3 Verified Today</span><span>📍 Mityana Focus</span><span>🇺🇬 134 Districts Ready</span></div>
+<div style="margin-top:20px"><a href="#businesses" class="btn btn-yellow">Explore Businesses ↓</a></div>
+</div>
+
+<div class="grid" id="businesses">
+
+<!-- STUDY RESOURCES WITH DOCUMENTS SIDE LIST -->
+<div class="card" style="grid-column: span 3;">
 <div class="icon">📚</div>
 <h3>Dani Study Resources - By Future Doctor Daniel</h3>
 <div class="meta">📍 Mityana • AAB Student • Top Notes</div>
-<p style="font-size:13px;color:#475569;margin-top:8px">Verified study materials for S.5 & S.6 — Biology, Chemistry, Physics. Made by AAB student.</p>
-
+<p style="font-size:13px;color:#475569;margin-top:8px">Verified study materials for S.5 & S.6 — Biology, Chemistry, Physics. Tap to download:</p>
 <div style="display:grid;gap:8px;margin-top:14px">
-<a href="Biology_AAB_Notes.pdf" style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;text-decoration:none;color:#0f0f0f;font-weight:600;font-size:13px">
-<span>📄 Biology AAB Notes - Paper 1 & 2</span><span style="color:#CE1126">PDF →</span>
-</a>
-<a href="Chemistry_Past_Papers.pdf" style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;text-decoration:none;color:#0f0f0f;font-weight:600;font-size:13px">
-<span>📄 Chemistry Past Papers Mityana</span><span style="color:#CE1126">PDF →</span>
-</a>
-<a href="Physics_Summaries.pdf" style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;text-decoration:none;color:#0f0f0f;font-weight:600;font-size:13px">
-<span>📄 Physics Summaries - Easy to Read</span><span style="color:#CE1126">PDF →</span>
-</a>
+<a class="doc-link" href="Biology_AAB_Notes.pdf"><span>📄 Biology AAB Notes - Paper 1 & 2</span><span style="color:#CE1126">PDF →</span></a>
+<a class="doc-link" href="Chemistry_Past_Papers.pdf"><span>📄 Chemistry Past Papers Mityana</span><span style="color:#CE1126">PDF →</span></a>
+<a class="doc-link" href="Physics_Summaries.pdf"><span>📄 Physics Summaries - Easy to Read</span><span style="color:#CE1126">PDF →</span></a>
+</div>
+<a class="wa" href="https://wa.me/256777353793?text=Hi%20Daniel%20I%20need%20Study%20Resources">WhatsApp for Full Package: 256777353793</a>
 </div>
 
-<a class="wa" href="https://wa.me/256777353793?text=Hi%20Daniel%20I%20need%20Study%20Resources">WhatsApp for Full Package: 256777353793</a>
-  </div>
+<div class="card">
+<div class="icon">😁</div>
+<h3>Smile Dental Care Mityana</h3>
+<div class="meta">📍 Mityana • Dental</div>
+<p style="font-size:13px;color:#475569;margin-top:8px">Affordable, gentle dental care in Mityana town.</p>
+<a class="wa" href="https://wa.me/256777353793?text=Hi%20I%20need%20Dental%20Care">WhatsApp 256777353793</a>
+</div>
+
+<div class="card">
+<div class="icon">🔧</div>
+<h3>Mityana Hardware</h3>
+<div class="meta">📍 Mityana • Hardware</div>
+<p style="font-size:13px;color:#475569;margin-top:8px">Cement, iron sheets, tools, paints — everything for building.</p>
+<a class="wa" href="https://wa.me/256772000001?text=Hi%20I%20need%20Hardware">WhatsApp</a>
+</div>
+
+<div class="card">
+<div class="icon">➕</div>
+<h3>Your Business Here?</h3>
+<div class="meta">Be Found on BCU</div>
+<p style="font-size:13px;color:#475569;margin-top:8px">Join 500+ businesses. List FREE today and get customers from Mityana & Uganda.</p>
+<a class="wa" style="background:#0f0f0f;color:#FFCC00" href="https://wa.me/256777353793?text=I%20want%20to%20list%20my%20business">List My Business FREE</a>
+</div>
+
+</div>
+
+<footer><b>Business Connect Uganda</b><br>By Daniel Mityana - Future Doctor & CEO<br><br><span style="color:#FFCC00">Mityana • Kampala • Gulu • Jinja • Mbarara • All Uganda</span><br><br>© 2026 • Exciting & Fast ⚡</footer>
+
+</body></html>
