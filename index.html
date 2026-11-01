@@ -81,4 +81,28 @@ footer b{color:white}
 
 <footer><b>Business Connect Uganda</b><br>By Daniel Mityana - Future Doctor & CEO<br><br><span style="color:#FFCC00">Mityana • Kampala • Gulu • Jinja • Mbarara • All Uganda</span><br><br>© 2026 • Exciting & Fast ⚡</footer>
 
-</body></html>
+<div id="listBox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;padding:20px;overflow:auto;">
+<div style="background:white;max-width:500px;margin:30px auto;padding:20px;border-radius:14px;">
+<h2>List Your Business FREE</h2>
+<input id="biz2" placeholder="Business Name" style="width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px">
+<select id="cat2" style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc"><option>Select Category</option><option>Phone Repair</option><option>Restaurant</option><option>Salon</option><option>Shop</option><option>Boda</option><option>Other</option></select>
+<input id="loc2" placeholder="Location" style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc">
+<input id="wap2" placeholder="Your WhatsApp" style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc">
+<textarea id="desc2" placeholder="What do you sell?" style="width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc"></textarea>
+<button onclick="send2()" style="background:#25D366;color:white;padding:14px;width:100%;border:none;border-radius:8px;font-weight:bold;">Submit → WhatsApp Daniel</button>
+<button onclick="document.getElementById('listBox').style.display='none'" style="margin-top:10px;width:100%;padding:10px;background:#eee;border:none;border-radius:8px;">Close</button>
+</div>
+</div>
+<script>
+function send2(){
+let b=document.getElementById('biz2').value;
+let c=document.getElementById('cat2').value;
+let l=document.getElementById('loc2').value;
+let w=document.getElementById('wap2').value;
+let d=document.getElementById('desc2').value;
+if(!b||!w){alert('Fill Business Name and WhatsApp!');return;}
+let msg=`NEW BCU LISTING by%0A%0ABusiness: ${b}%0ACategory: ${c}%0ALocation: ${l}%0AOwner WhatsApp: ${w}%0ADesc: ${d}%0A%0AI want to be listed on BCU!`;
+window.open(`https://wa.me/256777353793?text=${msg}`,'_blank');
+document.getElementById('listBox').style.display='none';
+}
+</script></body></html>
