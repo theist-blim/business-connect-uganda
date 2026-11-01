@@ -1,33 +1,27 @@
-l<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>List Business FREE - BCU</title>
-<style>body{font-family:Arial;padding:20px;background:#f5f5f5}.box{background:white;padding:20px;border-radius:12px;max-width:400px;margin:auto}input,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}button{background:red;color:white;padding:14px;width:100%;border:none;border-radius:8px;font-weight:bold;font-size:16px}</style>
-</head>
-<body>
-<div class="box">
-<h2 style="text-align:center">List Your Business FREE</h2>
-<input id="name" placeholder="Business Name e.g., Alex Phone Repair">
-<input id="category" placeholder="Category e.g., Phone Repair">
-<input id="location" placeholder="Location e.g., Mityana Market">
-<input id="whatsapp" placeholder="Your WhatsApp Number">
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>List Business - BCU</title>
+<style>body{font-family:sans-serif;padding:20px;max-width:500px;margin:auto}input,select,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}button{background:#25D366;color:white;padding:14px;border:none;border-radius:8px;width:100%;font-weight:bold;font-size:16px}</style>
+</head><body>
+<h2>List Your Business FREE on BCU</h2>
+<p>Get customers from Mityana + Google</p>
+<input id="biz" placeholder="Business Name e.g. Alex Phone Repair">
+<select id="cat"><option>Select Category</option><option>Phone Repair</option><option>Restaurant</option><option>Salon</option><option>Shop</option><option>Boda Boda</option><option>Other</option></select>
+<input id="loc" placeholder="Location e.g. Mityana Town">
+<input id="wap" placeholder="Your WhatsApp e.g. 0777xxxxxx">
 <textarea id="desc" placeholder="What do you sell?"></textarea>
 <button onclick="send()">Submit → WhatsApp CEO Daniel</button>
-<p style="font-size:12px;text-align:center;color:gray;">You will be added in 24hrs</p>
-</div>
 <script>
 function send(){
-let n=document.getElementById('name').value;
-let c=document.getElementById('category').value;
-let l=document.getElementById('location').value;
-let w=document.getElementById('whatsapp').value;
+let b=document.getElementById('biz').value;
+let c=document.getElementById('cat').value;
+let l=document.getElementById('loc').value;
+let w=document.getElementById('wap').value;
 let d=document.getElementById('desc').value;
-if(!n||!w){alert("Add Business Name + WhatsApp");return;}
-let yourNumber="256777353793";
-let msg=`NEW BCU LISTING%0A%0ABusiness: ${n}%0ACategory: ${c}%0ALocation: ${l}%0AOwner WhatsApp: ${w}%0ADesc: ${d}%0A%0AI want to be listed on BCU!`;
-window.open(`https://wa.me/${yourNumber}?text=${msg}`,'_blank');
+if(!b||!w){alert('Fill Business Name and WhatsApp!');return;}
+let msg=`NEW BCU LISTING by%0A%0ABusiness: ${b}%0ACategory: ${c}%0ALocation: ${l}%0AOwner WhatsApp: ${w}%0ADesc: ${d}%0A%0AI want to be listed on BCU!`;
+window.open(`https://wa.me/256777353793?text=${msg}`,'_blank');
 }
 </script>
-</body>
-  </html>
+<br><a href="index.html">← Back to Businesses</a>
+</body></html>
