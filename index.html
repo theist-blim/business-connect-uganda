@@ -1,98 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Business Connect Uganda | By Daniel - CEO</title>
+<title>BCU Uganda</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f8fafc;color:#0f172a}
-header{background:#0f0f0f;color:white;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-.logo{font-weight:800;font-size:18px}.logo span{color:#FFCC00}
-.btn{padding:10px 16px;border-radius:10px;border:none;font-weight:700;cursor:pointer}
-.btn-yellow{background:#FFCC00;color:#000}.btn-green{background:#25D366;color:white}
-.hero{background:radial-gradient(800px at 20% 20%, #1e293b 0%, #0f0f0f 100%);color:white;padding:40px 16px;text-align:center}
-.hero h1{font-size:36px;line-height:1.1}.hero h1 span{color:#FFCC00}
-.hero p{margin:14px 0;color:#cbd5e1}
-.search{max-width:600px;margin:20px auto;display:flex;gap:8px}
-.search input{flex:1;padding:14px;border-radius:12px;border:1px solid #e2e8f0;font-size:16px}
-.slideshow{max-width:900px;margin:24px auto;position:relative;border-radius:16px;overflow:hidden;height:280px}
-.slide{position:absolute;inset:0;opacity:0;transition:opacity 1s;display:flex;align-items:center;justify-content:center;color:white;font-size:24px;font-weight:800;background-size:cover;background-position:center}
-.slide.active{opacity:1}.slide::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.35)}
-.slide span{position:relative;z-index:1}
-.dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:2}
-.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.5)}.dot.active{background:#FFCC00}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:16px;max-width:1100px;margin:0 auto}
-.card{background:white;padding:18px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,0.06);border-left:5px solid #FFCC00;transition:0.2s}
-.card:hover{transform:translateY(-3px)}
-.card h3{margin-bottom:6px}.card p{color:#64748b;font-size:14px;margin:4px 0}
-.products{display:flex;gap:6px;margin:8px 0;flex-wrap:wrap}
-.products span{background:#fef9c3;color:#854d0e;padding:4px 8px;border-radius:20px;font-size:11px;font-weight:600}
-.card a{display:block;margin-top:10px;background:#25D366;color:white;padding:10px;border-radius:10px;text-decoration:none;font-weight:bold;text-align:center}
-.card .call-btn{background:#0f0f0f;margin-top:6px}
-footer{text-align:center;padding:20px;color:#64748b;font-size:13px}
-#listBox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:center;justify-content:center;padding:16px}
-#listBox.show{display:flex}
-#listBox .box{background:white;max-width:420px;width:100%;border-radius:16px;padding:20px}
-#listBox input,#listBox select,#listBox textarea{width:100%;padding:12px;margin:6px 0;border:1px solid #e2e8f0;border-radius:10px}
+body{font-family:Arial;background:#f8fafc;padding:10px}
+header{background:#000;color:#fff;padding:12px;display:flex;justify-content:space-between}
+.logo span{color:#FFCC00}
+.hero{background:#111;color:#fff;padding:30px;text-align:center;border-radius:12px}
+.hero span{color:#FFCC00}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:15px}
+.card{background:#fff;padding:15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.1);border-left:4px solid #FFCC00}
+.card a{display:block;background:#25D366;color:#fff;padding:10px;text-align:center;border-radius:8px;margin-top:8px;text-decoration:none}
+.slideshow{background:#222;color:#fff;padding:40px;text-align:center;border-radius:12px;margin:15px 0}
 </style>
 </head>
 <body>
-<header>
-<div class="logo">BCU <span>Connect Uganda</span></div>
-<button onclick="document.getElementById('listBox').classList.add('show')" class="btn btn-yellow">+ List FREE</button>
-</header>
-
-<div class="hero">
-<h1>Find Businesses in <span>Mityana & Uganda</span></h1>
-<p>Business Connect Uganda - CEO Daniel</p>
-<div class="search">
-<input id="search" placeholder="Search shop, salon, phone..." onkeyup="filterBiz()">
-<button class="btn btn-yellow" onclick="filterBiz()">Search</button>
+<header><div class="logo">BCU <span>Uganda</span></div><button>+ List FREE</button></header>
+<div class="hero"><h1>Find Businesses in <span>Mityana</span></h1><p>By CEO Daniel</p></div>
+<div class="slideshow">🔧 Phone Repair | 💇 Salon | 🛵 Boda Boda - Slideshow Coming</div>
+<div class="grid">
+<div class="card"><h3>Gfg</h3><p>Gg - Phone Repair</p><a href="https://wa.me/256777353793">WhatsApp</a></div>
+<div class="card"><h3>Daniel Repair</h3><p>Mityana Taxi Park</p><a href="https://wa.me/256777353793">WhatsApp</a></div>
+<div class="card"><h3>Mityana Salon</h3><p>Market Street</p><a href="https://wa.me/256777353793">WhatsApp</a></div>
 </div>
-<div class="slideshow">
-<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d')"><span>🔧 Phone Repair - Mityana</span></div>
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1560066984-138dadb4c035')"><span>💇‍♀️ Salons & Beauty</span></div>
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1585909695284-32d2985ac9b0')"><span>🛵 Boda Boda & Delivery</span></div>
-<div class="dots"><div class="dot active"></div><div class="dot"></div><div class="dot"></div></div>
-</div>
-</div>
-
-<div class="grid" id="bizGrid">
-<div class="card">
-<h3>🔧 Gfg</h3><p>📍 Gg</p><p>📱 Phone Repair - Ggg</p>
-<div class="products"><span>Screen</span><span>Battery</span><span>Covers</span></div>
-<a href="https://wa.me/256777353793">💬 WhatsApp</a><a href="tel:+256777353793" class="call-btn">📞 Call</a>
-</div>
-<div class="card"><h3>📱 Daniel Phone Repair</h3><p>📍 Mityana Taxi Park</p><p>Fast repair</p><div class="products"><span>iPhone</span><span>Samsung</span></div><a href="https://wa.me/256777353793">💬 WhatsApp</a></div>
-<div class="card"><h3>💇‍♀️ Mityana Salon</h3><p>📍 Market Street</p><p>Braiding</p><div class="products"><span>Braids</span><span>Weaves</span></div><a href="https://wa.me/256700000000">💬 WhatsApp</a></div>
-<div class="card"><h3>🛵 Boda Boda Express</h3><p>📍 All Mityana</p><p>Quick transport</p><div class="products"><span>Delivery</span><span>24/7</span></div><a href="https://wa.me/256700000000">💬 WhatsApp</a></div>
-</div>
-
-<div id="listBox" onclick="if(event.target==this)this.classList.remove('show')">
-<div class="box">
-<h3>List Your Business FREE</h3>
-<input id="bName" placeholder="Business Name">
-<input id="bLoc" placeholder="Location">
-<select id="bCat"><option>Phone Repair</option><option>Salon</option><option>Boda Boda</option><option>Shop</option></select>
-<input id="bPhone" placeholder="WhatsApp e.g. 0777...">
-<textarea id="bDesc" placeholder="Products e.g. Screen, Battery..."></textarea>
-<button class="btn btn-yellow" style="width:100%;margin-top:10px" onclick="generateCard()">Generate Code</button>
-<pre id="output" style="background:#f1f5f9;padding:10px;margin-top:10px;border-radius:8px;font-size:11px;display:none"></pre>
-<button class="btn" style="width:100%;margin-top:8px;background:#eee" onclick="document.getElementById('listBox').classList.remove('show')">Close</button>
-</div>
-</div>
-
-<footer>© 2026 BCU - Business Connect Uganda - Built by CEO Daniel</footer>
-
-<script>
-let cur=0;const slides=document.querySelectorAll('.slide');const dots=document.querySelectorAll('.dot');
-function showSlide(n){slides.forEach(s=>s.classList.remove('active'));dots.forEach(d=>d.classList.remove('active'));slides[n].classList.add('active');dots[n].classList.add('active')}
-setInterval(()=>{cur=(cur+1)%slides.length;showSlide(cur)},3000);
-function filterBiz(){let q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.card').forEach(c=>{c.style.display=c.innerText.toLowerCase().includes(q)?'block':'none'})}
-function generateCard(){
-let name=document.getElementById('bName').value||'My Business';let loc=document.getElementById('bLoc').value||'Mityana';let cat=document.getElementById('bCat').value;let phone=document.getElementById('bPhone').value||'0777000000';let desc=document.getElementById('bDesc').value||cat;let wa=phone.replace(/^0/,'256');let prods=desc.split(',').slice(0,3).map(p=>`<span>${p.trim()}</span>`).join('');let code=`<div class="card">\n<h3>${name}</h3>\n<p>📍 ${loc}</p>\n<p>${cat} - ${desc}</p>\n<div class="products">${prods}</div>\n<a href="https://wa.me/${wa}">💬 WhatsApp</a>\n</div>`;let out=document.getElementById('output');out.style.display='block';out.textContent=code;navigator.clipboard.writeText(code);alert('COPIED! Paste on top of bizGrid!')
-}
-</script>
 </body>
-  </html>
+</html>
