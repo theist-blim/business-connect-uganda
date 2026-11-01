@@ -1,0 +1,61 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCU ADMIN - CEO Daniel Only</title>
+<style>
+body{font-family:sans-serif;background:#0f0f0f;color:white;padding:20px;max-width:600px;margin:0 auto}
+input,textarea,select{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:none;font-size:16px}
+button{width:100%;padding:14px;background:#FFCC00;border:none;border-radius:8px;font-weight:800;font-size:16px;margin-top:10px}
+#output{background:#1e293b;padding:15px;border-radius:10px;margin-top:15px;word-break:break-all;font-family:monospace;color:#a5f3fc;white-space:pre-wrap}
+.card{background:white;color:black;padding:15px;border-radius:10px;margin-top:10px}
+</style>
+</head>
+<body>
+<h2>🔐 BCU ADMIN - CEO Daniel</h2>
+<p>Fill customer details → Get code</p>
+
+<input id="biz" placeholder="Business Name *">
+<input id="loc" placeholder="Location * e.g. Mityana Town">
+<select id="cat"><option>Phone Repair</option><option>Salon</option><option>Restaurant</option><option>Shop</option><option>Boda</option><option>Hotel</option><option>Other</option></select>
+<input id="wap" placeholder="WhatsApp * e.g. 0777123456">
+<textarea id="desc" placeholder="Description"></textarea>
+
+<button onclick="gen()">GENERATE CARD CODE</button>
+
+<div id="preview"></div>
+<div id="output"></div>
+<button onclick="copyCode()" style="background:#25D366;color:white;display:none;" id="copyBtn">📋 COPY CODE</button>
+<p id="instr" style="display:none;margin-top:15px;background:#FFCC00;color:black;padding:10px;border-radius:8px;">✅ Code copied! Now go to index.html → Edit → Paste it after &lt;div id="bizGrid"&gt; → Commit!</p>
+
+<script>
+function gen(){
+let b=document.getElementById('biz').value.trim()||'Business';
+let l=document.getElementById('loc').value.trim()||'Mityana';
+let c=document.getElementById('cat').value;
+let w=document.getElementById('wap').value.trim().replace(/[^0-9]/g,'');
+if(w.startsWith('0')) w='256'+w.substring(1);
+if(!w.startsWith('256')) w='256'+w;
+let d=document.getElementById('desc').value.trim()||c;
+
+let icon='📍';
+if(c.includes('Phone')) icon='📱';
+if(c.includes('Salon')) icon='💇';
+if(c.includes('Restaurant')) icon='🍲';
+if(c.includes('Boda')) icon='🛵';
+if(c.includes('Shop')) icon='🏪';
+
+let code=`<div class="card"><h3>${b}</h3><p>📍 ${l}</p><p>${icon} ${c} - ${d}</p><a href="https://wa.me/${w}">WhatsApp</a></div>`;
+
+document.getElementById('output').innerText=code;
+document.getElementById('preview').innerHTML='<p>Preview:</p>'+code;
+document.getElementById('copyBtn').style.display='block';
+}
+function copyCode(){
+let t=document.getElementById('output').innerText;
+navigator.clipboard.writeText(t);
+document.getElementById('instr').style.display='block';
+}
+</script>
+</body>
+</html>￼Enter
